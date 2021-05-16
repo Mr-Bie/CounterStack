@@ -16,6 +16,10 @@ public:
     bool isEmtpy(){
         return top == -1;
     }
+    void push(int num){
+        if(isFull()) return;
+        arr[++top] = num;
+    }
 
 private:
     int top = -1;
